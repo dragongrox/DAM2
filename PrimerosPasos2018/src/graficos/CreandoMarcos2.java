@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class CreandoMarcos2 {
     public static void main(String[] args) {
-
+        MiMarco2 miMarco2 = new MiMarco2();
     }
 }
 
