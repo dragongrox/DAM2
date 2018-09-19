@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" filepath="$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" />
     </modules>
   </component>
 </project>
