@@ -14,5 +14,6 @@ public class CreandoMarcos3 {
         marco1.setTitle("Mi primera Ventana");
         marco1.setExtendedState(Frame.MAXIMIZED_BOTH);                      //Ventana maximizada por defecto
         marco1.setResizable(false);                                         //Deshabilitar maximizar ventana
+
     }
 }
