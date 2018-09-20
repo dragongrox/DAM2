@@ -1,4 +1,4 @@
-package graficos;
+package PrimerosPasos2018.graficos;
 
 import javax.swing.*;
 import java.awt.*;

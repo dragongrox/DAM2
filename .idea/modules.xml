@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" filepath="$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PrimerosPasos2018/PrimerosPasos2018.iml" filepath="$PROJECT_DIR$/PrimerosPasos2018/PrimerosPasos2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/practicasPropuestas/practicasPropuestas.iml" filepath="$PROJECT_DIR$/practicasPropuestas/practicasPropuestas.iml" />
     </modules>
   </component>

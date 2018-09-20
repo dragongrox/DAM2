@@ -1,3 +1,5 @@
+package practicasPropuestas;
+
 import javax.swing.*;
 import java.awt.*;
 
