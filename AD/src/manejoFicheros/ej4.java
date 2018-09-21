@@ -15,6 +15,6 @@ public class ej4 {
     }
 
     public static void main(String[] args) {
-        filtro(new File("C:\\", new Date(12312312310L), new Date(134123245123521353L)));
+        filtro(new File("C:\\"), new Date(12312312310L), new Date(134123245123521353L));
     }
 }
