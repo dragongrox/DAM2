@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AD/AD.iml" filepath="$PROJECT_DIR$/AD/AD.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
       <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" filepath="$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/practicasPropuestas/practicasPropuestas.iml" filepath="$PROJECT_DIR$/practicasPropuestas/practicasPropuestas.iml" />
     </modules>
   </component>
 </project>
