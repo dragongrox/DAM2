@@ -10,7 +10,7 @@ public class PruebaDibujo {
 
     public static void main(String[] args) {
         //2º instancia de la ventana
-        MarcoVentanaTexto1 miMarco = new MarcoVentanaTexto1();
+        MarcoVentanaFuente miMarco = new MarcoVentanaFuente();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         miMarco.setVisible(true);
 
@@ -24,7 +24,7 @@ class MarcoVentanaTexto1 extends JFrame {
         setBounds(100, 200, 400, 400);
         setTitle("Primer texto en Ventana");
         //4º instanciamos la lamina
-        PanelTexto1 miPanel = new PanelTexto1();
+        PanelFuente miPanel = new PanelFuente();
         //5º agregamos el componente a la lamina
         add(miPanel);
 
@@ -57,5 +57,12 @@ class PanelTexto1 extends JPanel {
         Ellipse2D elipse = new Ellipse2D.Double(100, 100, 200, 150);
         g2.draw(elipse);
         g2.draw(new Line2D.Double(100, 100, 300, 250));
+        //centro x e y para el circulo que lo englobetodo
+        double centrox = rectangulo.getCenterX();
+        double centroy = rectangulo.getCenterY();
+        double radio = 150;
+        Ellipse2D circulo = new Ellipse2D.Double();
+        circulo.setFrameFromCenter(centrox, centroy, centrox + radio, centroy + radio);
+        g2.draw(circulo);
     }
 }
