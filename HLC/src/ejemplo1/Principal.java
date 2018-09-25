@@ -5,8 +5,9 @@
  */
 package ejemplo1;
 
+import javax.swing.*;
+
 import static java.awt.EventQueue.invokeLater;
-import javax.swing.JFrame;
 
 /**
  *

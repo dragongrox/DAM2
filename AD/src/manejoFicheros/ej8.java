@@ -41,13 +41,13 @@ public class ej8 implements Serializable {
 
     public static void main(String[] args) {
         try {
-            introducirDatos("C:\\Pruebas\\AleatorioEmple.dat", new Empleado(introduccionTeclado("Apellido"), introduccionTeclado("Departamento"), Float.parseFloat(introduccionTeclado("salario"))));
+            introducirDatos("C:\\Pruebas\\Empleados.xml", new Empleado(introduccionTeclado("Apellido"), introduccionTeclado("Departamento"), Float.parseFloat(introduccionTeclado("salario"))));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         try {
-            leerID("C:\\Pruebas\\AleatorioEmple.dat", Integer.parseInt(introduccionTeclado("Identificador")));
+            leerID("C:\\Pruebas\\Empleados.xml", Integer.parseInt(introduccionTeclado("Identificador")));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/AD/AD.iml" filepath="$PROJECT_DIR$/AD/AD.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
       <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" filepath="$PROJECT_DIR$/PSPLayouts/PSPLayouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HLC/HLC.iml" filepath="$PROJECT_DIR$/HLC/HLC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AD/MetodoDOM.iml" filepath="$PROJECT_DIR$/AD/MetodoDOM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSP/PSP.iml" filepath="$PROJECT_DIR$/PSP/PSP.iml" />
     </modules>
   </component>
 </project>
