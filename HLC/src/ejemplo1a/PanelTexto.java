@@ -3,7 +3,7 @@ package ejemplo1a;
 import javax.swing.*;
 import java.awt.*;
 
-public class PanelTexto extends JFrame {
+public class PanelTexto extends JPanel {
     private JTextField txtMensaje;
 
     public PanelTexto() {
