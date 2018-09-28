@@ -1,9 +1,12 @@
-package practicasPropuestas;
+package practicasPropuestas.Quinta;
 
+import javafx.scene.image.Image;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
+import java.io.File;
+import java.io.IOException;
 
 import static javax.swing.SwingUtilities.invokeLater;
 
@@ -12,7 +15,7 @@ import static javax.swing.SwingUtilities.invokeLater;
  * tipo de letra grande, visible y en un color destacado, crea un objeto tipo rectangulo y tachalo con una linea.
  * Comenta los metodos utilizados.
  */
-public class CuartapracticaPropuesta {
+public class QuintaPracticaPropuesta {
     public static void main(String[] args) {
         invokeLater(new Runnable() {
             @Override
@@ -21,8 +24,9 @@ public class CuartapracticaPropuesta {
             }
         });
     }
-    public static void mostrar(){
-        Ventana frame=new Ventana();
+
+    public static void mostrar() {
+        Ventana frame = new Ventana();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setBounds(200, 300, 500, 500);
@@ -30,45 +34,43 @@ public class CuartapracticaPropuesta {
     }
 }
 
-class Ventana extends JFrame{
+class Ventana extends JFrame {
     Cartel cartel;
     Imagen imagen;
-    public Ventana(){
-        cartel=new Cartel();
-        imagen=new Imagen();
-        Container container=this.getContentPane();
+
+    public Ventana() {
+        cartel = new Cartel();
+        imagen = new Imagen();
+        Container container = this.getContentPane();
         container.setLayout(new BorderLayout());
-        container.add(cartel,BorderLayout.PAGE_START);
-        container.add(imagen,BorderLayout.CENTER);
+        container.add(cartel, BorderLayout.PAGE_START);
+        container.add(imagen, BorderLayout.CENTER);
     }
 }
 
-class Cartel extends JPanel{
+class Cartel extends JPanel {
     JLabel labelMensaje;
-    public Cartel(){
-        labelMensaje=new JLabel("Prohibido utilizar moviles en clase");
+
+    public Cartel() {
+        labelMensaje = new JLabel("Prohibido utilizar moviles en clase");
         labelMensaje.setFont(new Font("Tahoma", 1, 25));
         labelMensaje.setForeground(Color.RED);
         add(labelMensaje, new FlowLayout(FlowLayout.CENTER));
     }
 }
 
-class Imagen extends JPanel{
+class Imagen extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         //no podemos instanciar directamente la clase Rectangle2d por ser abstracta
         //por el principio de Liskov instanciamos atraves de una subclase Rectangle2D.Double
-        Rectangle2D rectangulo = new Rectangle2D.Double(150, 100, 200, 75);
-        Rectangle2D rectangulo2 = new Rectangle2D.Double(150, 175, 200, 75);
-        Rectangle2D rectangulo3 = new Rectangle2D.Double(160, 110, 180, 55);
-        Rectangle2D rectangulo4 = new Rectangle2D.Double(170, 70, 10, 30);
-        //ahora dibujamos el objeto
-        g2.draw(rectangulo);
-        g2.draw(rectangulo2);
-        g2.draw(rectangulo3);
-        g2.draw(rectangulo4);
-        g2.draw(new Line2D.Double(100, 100, 400, 250));
+        File file = new File("C:\\Pruebas\\movil.png");
+        try {
+            Image image = ImageIO.read(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }
