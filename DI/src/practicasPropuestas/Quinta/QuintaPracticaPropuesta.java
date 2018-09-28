@@ -1,12 +1,8 @@
 package practicasPropuestas.Quinta;
 
-import javafx.scene.image.Image;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
 
 import static javax.swing.SwingUtilities.invokeLater;
 
@@ -66,11 +62,7 @@ class Imagen extends JPanel {
         //no podemos instanciar directamente la clase Rectangle2d por ser abstracta
         //por el principio de Liskov instanciamos atraves de una subclase Rectangle2D.Double
         File file = new File("C:\\Pruebas\\movil.png");
-        try {
-            Image image = ImageIO.read(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //Image image = ImageIO.read(file);
 
     }
 }
