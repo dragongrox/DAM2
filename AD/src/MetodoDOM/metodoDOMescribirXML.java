@@ -16,7 +16,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class metodoDOM {
+public class metodoDOMescribirXML {
     public static String leerString(RandomAccessFile accessFile) throws IOException {
         String texto = "";
         byte caracter = 0;
