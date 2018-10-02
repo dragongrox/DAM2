@@ -1,23 +1,54 @@
 package practicasPropuestas.Sexta;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
- * Crea una ventana que al ejecutarse muestre un cuadro de opciones que sean (abrir, cerrar, guardar, cancelar), se se ha
- * elegido la opcion guardar debe aparecer unmensaje de dialogo indicando que el dato se ha guardado, si no un mensaje con
- * el texto de "Continuar"
+ * Crea una ventana, en la que se muestre un botón con el título “Saludo”
+ * y otro con el título “Despedida”, al pulsar el botón “Saludo” aparezca
+ * un mensaje(JOptionPane.showMessageDialog) que diga “HOLA” y al pulsar
+ * el botón “Despedida” ”aparezca un mensaje(JOptionPane.showMessageDialog)
+ * que diga “ADIOS”
  */
 public class SextaPracticaPropuesta {
     public static void main(String[] args) {
-        String[] opciones = {"abrir", "cerrar", "guardar", "cancelar"};
-        int seleccion = JOptionPane.showOptionDialog(null,
-                "Selecciona un opcion", "Mensaje de Dialogo",
-                JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                null, opciones, opciones[2]);
-        if (seleccion == 2) {
-            JOptionPane.showMessageDialog(null, "El dato se ha guardado");
-        } else if (seleccion == 3) {
-            JOptionPane.showConfirmDialog(null, "Continuar");
+        Frame frame = new Frame();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+}
+
+class Frame extends JFrame {
+    Panel panel;
+
+    public Frame() {
+        setTitle("Ejecicio 6");
+        setBounds(200, 200, 400, 400);
+        panel = new Panel();
+        add(panel);
+    }
+}
+
+class Panel extends JPanel {
+    JButton buttonSaludo, buttonDespedida;
+
+    public Panel() {
+        buttonSaludo = new JButton("Saludo");
+        buttonDespedida = new JButton("Despedida");
+        add(buttonSaludo);
+        add(buttonDespedida);
+    }
+
+    private class ColorFondo implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource() == buttonSaludo) {
+                JOptionPane.showMessageDialog(null, "HOLA");
+            } else if (e.getSource() == buttonDespedida) {
+                JOptionPane.showMessageDialog(null, "ADIOS");
+            }
         }
     }
 }

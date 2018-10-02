@@ -34,5 +34,4 @@ public class Principal {
             System.err.println("Error, mensaje : " + ex.getMessage());
         }
     }
-    //-----------------------------------------------------------------------
 }
