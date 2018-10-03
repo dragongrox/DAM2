@@ -1,44 +1,46 @@
 package practicasPropuestas.Sexta;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Crea una ventana, en la que se muestre un botón con el título “Saludo”
- * y otro con el título “Despedida”, al pulsar el botón “Saludo” aparezca
- * un mensaje(JOptionPane.showMessageDialog) que diga “HOLA” y al pulsar
- * el botón “Despedida” ”aparezca un mensaje(JOptionPane.showMessageDialog)
- * que diga “ADIOS”
+ * Realiza una modificación de la aplicación anterior
+ * de tal forma que los textos de “Hola” y “Adiós” se
+ * muestren en la propia ventana
  */
-public class SextaPracticaPropuesta {
+public class SextaPracticaPropuestaBis {
     public static void main(String[] args) {
-        Frame frame = new Frame();
+        FrameBis frame = new FrameBis();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
 
-class Frame extends JFrame {
-    Panel panel;
+class FrameBis extends JFrame {
+    PanelBis panel;
 
-    public Frame() {
+    public FrameBis() {
         setTitle("Ejecicio 6");
         setBounds(200, 200, 400, 400);
-        panel = new Panel();
+        panel = new PanelBis();
         add(panel);
     }
 }
 
-class Panel extends JPanel {
+class PanelBis extends JPanel {
     JButton buttonSaludo, buttonDespedida;
+    JLabel label;
 
-    public Panel() {
+    public PanelBis() {
         buttonSaludo = new JButton("Saludo");
         buttonDespedida = new JButton("Despedida");
+        label = new JLabel("");
         add(buttonSaludo);
         add(buttonDespedida);
+        add(label, FlowLayout.CENTER);
         buttonSaludo.addActionListener(new Listener());
         buttonDespedida.addActionListener(new Listener());
     }
@@ -47,9 +49,9 @@ class Panel extends JPanel {
         @Override
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == buttonSaludo) {
-                JOptionPane.showMessageDialog(null, "HOLA");
+                label.setText("Hola");
             } else if (e.getSource() == buttonDespedida) {
-                JOptionPane.showMessageDialog(null, "ADIOS");
+                label.setText("Adios");
             }
         }
     }
