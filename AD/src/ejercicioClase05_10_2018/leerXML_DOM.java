@@ -29,7 +29,8 @@ public class leerXML_DOM {
                         NodeList nl = node.getChildNodes();
                         for (int j = 0; j < nl.getLength(); j++) {
                             Node nd = nl.item(j);
-                            System.out.println(nd.getTextContent());
+                            if (!nd.getTextContent().trim().equals(""))
+                                System.out.println(nd.getTextContent());
                         }
                     }
                 }
