@@ -1,14 +1,15 @@
 import javax.swing.*;
 
-public class Frame extends JFrame {
+public class FrameHorizontal extends JFrame {
     BoxLayoutHorizontal boxLayoutHorizontal;
 
-    public Frame() {
+    public FrameHorizontal() {
         iniciaComponentes();
     }
 
     private void iniciaComponentes() {
         boxLayoutHorizontal = new BoxLayoutHorizontal();
         add(boxLayoutHorizontal);
+        pack();
     }
 }
