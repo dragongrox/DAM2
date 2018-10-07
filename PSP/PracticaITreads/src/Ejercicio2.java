@@ -16,7 +16,7 @@ public class Ejercicio2 extends Thread {
         thread1.start();
         thread2.start();
         thread3.start();
-        while (thread1.isAlive() || thread2.isAlive()) {
+        while (thread1.isAlive() || thread2.isAlive() || thread3.isAlive()) {
         }
         long te = (System.currentTimeMillis() - ti) / 1000;
         System.out.println("Final de Programa, tiempo de Ejecucion:" + te);
