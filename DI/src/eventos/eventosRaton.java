@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 public class eventosRaton {
 
     public static void main(String[] args) {
-        VentanaEventosRaton miVentana = new VentanaEventosRaton();
+        VentanaEventosFoco miVentana = new VentanaEventosFoco();
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         miVentana.setVisible(true);
 
