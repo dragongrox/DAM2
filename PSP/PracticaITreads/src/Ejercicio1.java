@@ -70,7 +70,6 @@ class cuentaAtras implements Runnable {
             dormir(1000);
             System.out.println((num - cont));
             cont++;
-
         }
     }
 
