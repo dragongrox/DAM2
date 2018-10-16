@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/DI/src/eventos/AccionTecladoClase.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PSP/Practica3/src/PanelCronometro.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/PSP/Practica3/src/Ventana.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/PSP/src/Cronometro/PanelCronometro.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/PSP/src/Cronometro/Principal.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/PSP/src/Cronometro/Ventana.java" charset="windows-1252" />
