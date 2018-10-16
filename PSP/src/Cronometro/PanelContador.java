@@ -58,5 +58,6 @@ public class PanelContador extends JPanel {
         btnPausar.setEnabled(true);
         btnContinuar.setEnabled(false);
         hilo.resume();
+
     }
 }
