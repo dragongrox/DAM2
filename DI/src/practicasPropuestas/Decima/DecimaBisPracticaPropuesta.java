@@ -18,7 +18,7 @@ public class DecimaBisPracticaPropuesta {
 
 class VentanaDecima10bis extends JFrame {
     public VentanaDecima10bis() {
-        setTitle("Ventana Respondiento FocusEvent");
+        setTitle("Frame Respondiento FocusEvent");
         setBounds(200, 200, 400, 400);
         add(new PanelDecimaDecima10bis());
     }

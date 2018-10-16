@@ -3,14 +3,12 @@ package Layout.Ejercicios.PruebaLayouts1;
 import javax.swing.*;
 import java.awt.*;
 
-public class Ventana extends JFrame {
-    private static final long serialVersionUID = 1L;
-
+public class Frame extends JFrame {
     PanelSuperior ps;
     PanelInferior pinf;
     JButton amarillo, rojo, azul, negro, verde;
 
-    public Ventana() {
+    public Frame() {
         iniciaComponentes();
     }
 
@@ -30,10 +28,6 @@ public class Ventana extends JFrame {
         add(pinf, BorderLayout.PAGE_END);
 
         pack();
-    }
-
-    public void cambiarFondo(Color c) {
-        setBackground(c);
     }
 
 }

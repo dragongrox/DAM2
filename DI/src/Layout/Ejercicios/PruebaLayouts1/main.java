@@ -4,10 +4,10 @@ import javax.swing.*;
 
 import static javax.swing.SwingUtilities.invokeLater;
 
-public class Principal {
+public class main {
 
     public static void mostrar() {
-        Ventana v = new Ventana();
+        Frame v = new Frame();
         v.setTitle("Prueba Layouts");
         v.setBounds(250, 250, 500, 300);
         v.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -14,7 +14,7 @@ public class EventoFoco {
 
 class VentanaEventosFoco extends JFrame {
     public VentanaEventosFoco() {
-        setTitle("Ventana Respondiento FocusEvent");
+        setTitle("Frame Respondiento FocusEvent");
         setBounds(200, 200, 400, 400);
         add(new PanelFoco());
     }

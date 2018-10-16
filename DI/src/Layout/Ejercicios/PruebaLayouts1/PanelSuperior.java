@@ -9,11 +9,11 @@ public class PanelSuperior extends JPanel {
 
     JButton btnAmarillo, btnRojo;
 
-    public PanelSuperior(Ventana v) {
+    public PanelSuperior(Frame v) {
         iniciaComponentes(v);
     }
 
-    public void iniciaComponentes(Ventana v) {
+    public void iniciaComponentes(Frame v) {
         btnAmarillo = new JButton("Amarillo");
         btnRojo = new JButton("Rojo");
 

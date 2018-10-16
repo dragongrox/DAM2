@@ -22,7 +22,7 @@ public class PruebaImagenes {
 class MarcoVentanaImagenes extends JFrame {
     public MarcoVentanaImagenes() {
         setBounds(100, 200, 400, 400);
-        setTitle("Primer texto en Ventana");
+        setTitle("Primer texto en Frame");
         //4º instanciamos la lamina
         PanelImagenes miPanel = new PanelImagenes();
         //5º agregamos el componente a la lamina

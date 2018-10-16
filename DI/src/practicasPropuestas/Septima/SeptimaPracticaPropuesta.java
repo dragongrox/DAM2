@@ -24,7 +24,7 @@ class Frame extends JFrame implements WindowListener {
     Panel panel;
 
     public Frame(int x, int y) {
-        setTitle("Ventana Respondiendo cambio de estado");
+        setTitle("Frame Respondiendo cambio de estado");
         setBounds(x, y, 400, 400);
         panel = new Panel();
         add(panel);

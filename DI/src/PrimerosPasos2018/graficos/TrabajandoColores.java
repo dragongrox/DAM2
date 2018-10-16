@@ -21,7 +21,7 @@ public class TrabajandoColores {
 class MarcoVentanaColor extends JFrame {
     public MarcoVentanaColor() {
         setBounds(100, 200, 400, 400);
-        setTitle("Primer texto en Ventana");
+        setTitle("Primer texto en Frame");
         //4º instanciamos la lamina
         PanelFuente miPanel = new PanelFuente();
         //5º agregamos el componente a la lamina

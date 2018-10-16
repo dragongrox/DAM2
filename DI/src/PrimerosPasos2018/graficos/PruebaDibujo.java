@@ -22,7 +22,7 @@ public class PruebaDibujo {
 class MarcoVentanaTexto1 extends JFrame {
     public MarcoVentanaTexto1() {
         setBounds(100, 200, 400, 400);
-        setTitle("Primer texto en Ventana");
+        setTitle("Primer texto en Frame");
         //4º instanciamos la lamina
         PanelFuente miPanel = new PanelFuente();
         //5º agregamos el componente a la lamina
@@ -39,7 +39,7 @@ class PanelTexto1 extends JPanel {
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        //g.drawString("Estamos aprendiendo a escribir en un panel1", 50, 100);
+        //g.drawString("Estamos aprendiendo a escribir en un Panel1", 50, 100);
         // dibujar rectangulo
         //g.drawRect(50,75,200,150);
         // dibujar linea

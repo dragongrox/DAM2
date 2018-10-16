@@ -16,7 +16,7 @@ class MiMarco2 extends JFrame {
         setSize(400, 200);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(50, 200, 500, 100);
-        setTitle("Mi primera Ventana");
+        setTitle("Mi primera Frame");
         setExtendedState(Frame.MAXIMIZED_BOTH);
         setResizable(false);
     }

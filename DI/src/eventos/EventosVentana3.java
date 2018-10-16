@@ -15,7 +15,7 @@ public class EventosVentana3 {
 class FrameEventos3 extends JFrame {
 
     public FrameEventos3() {
-        setTitle("Ventana Respondiendo conclase adaptadora");
+        setTitle("Frame Respondiendo conclase adaptadora");
         setBounds(200, 200, 400, 400);
         addWindowListener(new Oyente());
     }
@@ -26,16 +26,16 @@ class FrameEventos3 extends JFrame {
 class Oyente extends WindowAdapter {
     @Override
     public void windowClosed(WindowEvent e) {
-        System.out.println("Ventana cerranda");
+        System.out.println("Frame cerranda");
     }
 
     @Override
     public void windowIconified(WindowEvent e) {
-        System.out.println("Ventana minimizada");
+        System.out.println("Frame minimizada");
     }
 
     @Override
     public void windowActivated(WindowEvent e) {
-        System.out.println("Ventana activada");
+        System.out.println("Frame activada");
     }
 }

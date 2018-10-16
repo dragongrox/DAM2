@@ -15,7 +15,7 @@ public class CambioDeestadoVentana {
 class FrameEstado extends JFrame {
 
     public FrameEstado() {
-        setTitle("Ventana Respondiendo cambio de estado");
+        setTitle("Frame Respondiendo cambio de estado");
         setBounds(200, 200, 400, 400);
         addWindowStateListener(new OyenteEstado());
     }

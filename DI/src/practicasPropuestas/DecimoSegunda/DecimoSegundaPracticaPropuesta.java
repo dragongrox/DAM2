@@ -19,7 +19,7 @@ public class DecimoSegundaPracticaPropuesta {
 
 class VentanaDecimoSegunda extends JFrame {
     public VentanaDecimoSegunda() {
-        setTitle("Ventana Respondiento FocusEvent");
+        setTitle("Frame Respondiento FocusEvent");
         setBounds(200, 200, 400, 400);
         add(new PanelDecimaDecimoSegunda());
     }

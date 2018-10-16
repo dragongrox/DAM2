@@ -12,11 +12,11 @@ public class PanelInferior extends JPanel {
 
     JButton btnAzul, btnNegro, btnVerde;
 
-    public PanelInferior(Ventana v) {
+    public PanelInferior(Frame v) {
         iniciaComponentes(v);
     }
 
-    public void iniciaComponentes(Ventana v) {
+    public void iniciaComponentes(Frame v) {
         btnAzul = new JButton("Azul");
         btnNegro = new JButton("Negro");
         btnVerde = new JButton("Verde");

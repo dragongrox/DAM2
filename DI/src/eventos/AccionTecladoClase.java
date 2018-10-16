@@ -20,7 +20,7 @@ class VentanaAccionTeclado extends JFrame {
     private static final long serialVersionUID = 1L;
 
     public VentanaAccionTeclado() {
-        setTitle("Ventana respondiendo a FocusEvent");
+        setTitle("Frame respondiendo a FocusEvent");
         setBounds(200, 200, 400, 400);
         add(new PanelAccionTeclado());
     }
