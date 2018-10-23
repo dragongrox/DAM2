@@ -21,7 +21,7 @@ public class PanelCronometro extends JPanel {
     public void iniciaComponentes() {
 
 
-        jlCronometro = new JLabel("00:00");
+        jlCronometro = new JLabel("0");
 
 
         jlCronometro.setForeground(Color.GREEN);

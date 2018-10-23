@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class PanelBotones extends JPanel {
 
-    JButton btnComenzar, btnPausar, btnContinuar, btnSalir;
+    JButton buttonComenzar, buttonSalir;
 
     public PanelBotones() {
         iniciaComponentes();
@@ -11,32 +11,18 @@ public class PanelBotones extends JPanel {
 
     public void iniciaComponentes() {
 
-        btnComenzar = new JButton("Comenzar");
-        btnPausar = new JButton("Pausar");
-        btnContinuar = new JButton("Continuar");
-        btnSalir = new JButton("Salir");
+        buttonComenzar = new JButton("Comenzar");
+        buttonSalir = new JButton("Salir");
 
-
-        btnPausar.setEnabled(false);
-        btnContinuar.setEnabled(false);
-
-
-        btnComenzar.setPreferredSize(new Dimension(100, 20));
-        btnPausar.setPreferredSize(new Dimension(100, 20));
-        btnContinuar.setPreferredSize(new Dimension(100, 20));
-        btnSalir.setPreferredSize(new Dimension(100, 20));
-
+        buttonComenzar.setPreferredSize(new Dimension(100, 20));
+        buttonSalir.setPreferredSize(new Dimension(100, 20));
 
         setLayout(new FlowLayout(FlowLayout.CENTER, 10, 0));
+        add(Box.createRigidArea(new Dimension(100, 100)));
+        add(buttonComenzar);
+        add(buttonSalir);
 
-
-        add(btnComenzar);
-        add(btnPausar);
-        add(btnContinuar);
-        add(btnSalir);
-
-
-        btnSalir.addActionListener(e -> salir());
+        buttonSalir.addActionListener(e -> salir());
 
     }
 
@@ -44,17 +30,8 @@ public class PanelBotones extends JPanel {
         System.exit(0);
     }
 
-    public JButton getBtnComenzar() {
-        return btnComenzar;
+    public JButton getButtonComenzar() {
+        return buttonComenzar;
     }
-
-    public JButton getBtnPausar() {
-        return btnPausar;
-    }
-
-    public JButton getBtnContinuar() {
-        return btnContinuar;
-    }
-
 
 }

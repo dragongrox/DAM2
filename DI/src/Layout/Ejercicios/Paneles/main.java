@@ -19,7 +19,7 @@ import static javax.swing.SwingUtilities.invokeLater;
 public class main {
     public static void mostrar() {
         Frame v = new Frame();
-        v.setTitle("Prueba Paneles");
+        v.setTitle("Ventana Confirmacion");
         v.setBounds(250, 250, 600, 600);
         v.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         v.setVisible(true);

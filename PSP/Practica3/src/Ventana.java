@@ -3,7 +3,9 @@ import java.awt.*;
 
 public class Ventana extends JFrame {
 
-    PanelContador panelContador1, panelContador2, panelContador3;
+    PanelContador panelContador1, panelContador2;
+    PanelBotones panelBotones;
+    HiloCronometro hiloCronometro1, hiloCronometro2;
 
     public Ventana() {
         iniciaComponentes();
@@ -11,20 +13,26 @@ public class Ventana extends JFrame {
 
     public void iniciaComponentes() {
 
-        panelContador1 = new PanelContador();
-        panelContador2 = new PanelContador();
-        panelContador3 = new PanelContador();
+        panelBotones = new PanelBotones();
+        panelContador1 = new PanelContador("1");
+        panelContador2 = new PanelContador("2");
 
         Container lienzo = this.getContentPane();
         GridLayout bl = new GridLayout();
         lienzo.setLayout(bl);
         lienzo.add(panelContador1);
         lienzo.add(panelContador2);
-        lienzo.add(panelContador3);
-        lienzo.add(Box.createRigidArea(new Dimension(0, 50)));
+        lienzo.add(panelBotones);
         pack();
 
+        panelBotones.buttonComenzar.addActionListener(e -> Comenzar());
 
+
+    }
+
+    private void Comenzar() {
+        panelContador1.Comenzar();
+        panelContador2.Comenzar();
     }
 
 }
