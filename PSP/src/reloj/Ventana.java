@@ -25,7 +25,7 @@ public class Ventana extends JFrame {
         iniciaComponentes();
     }
 
-    //--------------------------------------------------------------------------
+
     public void iniciaComponentes() {
         testigo = new Semaforo(true);
         p1 = new Panel1();

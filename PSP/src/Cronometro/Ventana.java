@@ -21,8 +21,6 @@ public class Ventana extends JFrame {
         lienzo.add(panelContador1);
         lienzo.add(Box.createRigidArea(new Dimension(0, 50)));
         pack();
-
-
     }
 
 }
