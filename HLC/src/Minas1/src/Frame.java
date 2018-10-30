@@ -11,29 +11,16 @@ public class Frame extends JFrame {
         panelTablero = new PanelTablero(10, 10);
         panelMenu = new PanelMenu();
 
-        Container container = this.getContentPane();
-        GroupLayout groupLayout = new GroupLayout(container);
-        container.setLayout(groupLayout);
+        JPanel panelMargenes = new JPanel();
+        panelMargenes.add(panelMenu, BorderLayout.CENTER);
+        panelMargenes.add(Box.createHorizontalStrut(10), BorderLayout.EAST);
+        panelMargenes.add(Box.createHorizontalStrut(10), BorderLayout.WEST);
+        panelMargenes.add(Box.createVerticalStrut(10), BorderLayout.NORTH);
+        panelMargenes.add(Box.createVerticalStrut(10), BorderLayout.SOUTH);
 
-        groupLayout.setAutoCreateGaps(true);
-        groupLayout.setAutoCreateContainerGaps(true);
-
-        groupLayout.setHorizontalGroup(
-                groupLayout.createSequentialGroup()
-                        .addComponent(panelTablero)
-                        .addComponent(panelMenu)
-
-        );
-
-        groupLayout.setVerticalGroup(
-                groupLayout.createSequentialGroup()
-                        .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                .addComponent(panelTablero)
-                                .addComponent(panelMenu))
-        );
-
-        groupLayout.linkSize(SwingConstants.CENTER, panelTablero, panelMenu);
-
+        setLayout(new BorderLayout());
+        add(panelTablero, BorderLayout.CENTER);
+        add(panelMargenes, BorderLayout.EAST);
         pack();
 
     }
