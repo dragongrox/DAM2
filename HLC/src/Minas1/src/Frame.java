@@ -6,10 +6,13 @@ import java.awt.*;
 public class Frame extends JFrame {
     PanelTablero panelTablero;
     PanelMenu panelMenu;
+    HiloCronometro hiloCronometro;
+    boolean pausado = false;
 
     public Frame() {
-        panelTablero = new PanelTablero(10, 10);
         panelMenu = new PanelMenu();
+        hiloCronometro = new HiloCronometro(panelMenu.labelReloj);
+        panelTablero = new PanelTablero(10, 10, panelMenu, hiloCronometro);
 
         JPanel panelMargenes = new JPanel();
         panelMargenes.add(panelMenu, BorderLayout.CENTER);
@@ -22,7 +25,38 @@ public class Frame extends JFrame {
         add(panelTablero, BorderLayout.CENTER);
         add(panelMargenes, BorderLayout.EAST);
         pack();
+        this.setSize(600, this.getHeight());
+
+        panelMenu.buttonStart.addActionListener(e -> Iniciar());
+        panelMenu.buttonExit.addActionListener(e -> Salir());
+        panelMenu.buttonPause.addActionListener(e -> Pausar());
+
+        hiloCronometro.start();
+        hiloCronometro.suspend();
+    }
+
+    private void Pausar() {
+        if (!pausado) {
+            hiloCronometro.suspend();
+            pausado = true;
+            panelTablero.setVisible(false);
+            panelMenu.buttonStart.setEnabled(false);
+        } else {
+            hiloCronometro.resume();
+            pausado = false;
+            panelTablero.setVisible(true);
+            panelMenu.buttonStart.setEnabled(true);
+        }
 
     }
 
+    private void Salir() {
+        System.exit(0);
+    }
+
+    private void Iniciar() {
+        panelTablero.iniciar(10, 10);
+        panelMenu.labelReloj.setText("00:00");
+        hiloCronometro.resume();
+    }
 }
