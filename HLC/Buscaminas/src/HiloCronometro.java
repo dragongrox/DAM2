@@ -1,5 +1,3 @@
-package Minas1.src;
-
 import javax.swing.*;
 
 public class HiloCronometro extends Thread {

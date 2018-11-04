@@ -1,5 +1,3 @@
-package Minas1.src;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -64,7 +62,7 @@ public class PanelTablero extends JPanel {
                 }
             }
             if (matriz[altura][anchura] == 9) {
-                buttons[altura][anchura].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\src\\Minas1\\img\\minasexpult.png"));
+                buttons[altura][anchura].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\Buscaminas\\src\\img\\minasexpult.png"));
                 buttons[altura][anchura].setEnabled(false);
                 hiloCronometro.suspend();
                 desvelarTodo();
@@ -82,7 +80,7 @@ public class PanelTablero extends JPanel {
                         buttons[contX][contY].setText(String.valueOf(matriz[contX][contY]));
                         buttons[contX][contY].setEnabled(false);
                     } else {
-                        buttons[contX][contY].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\src\\Minas1\\img\\minanoexp.png"));
+                        buttons[contX][contY].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\Buscaminas\\src\\img\\minanoexp.png"));
                         buttons[contX][contY].setEnabled(false);
                     }
                 }
@@ -173,7 +171,7 @@ public class PanelTablero extends JPanel {
                     for (int contY = 0; contY < buttons[contX].length; contY++) {
                         if (buttons[contX][contY].equals(e.getSource())) {
                             if (buttons[contX][contY].getIcon() == null && numBanderas < 10) {
-                                buttons[contX][contY].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\src\\Minas1\\img\\bandera2.jpg"));
+                                buttons[contX][contY].setIcon(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\Buscaminas\\src\\img\\bandera2.jpg"));
                                 numBanderas++;
                                 labelBanderas.setText(String.valueOf(numBanderas) + "/10");
                             } else if (buttons[contX][contY].getIcon() != null && numBanderas > 0) {

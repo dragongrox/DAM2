@@ -1,5 +1,3 @@
-package Minas1.src;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -9,9 +7,9 @@ public class PanelMenu extends JPanel {
     JButton buttonStart, buttonPause, buttonExit;
 
     public PanelMenu() {
-        JLabel labelBanderaIcon = new JLabel(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\src\\Minas1\\img\\bandera.jpg"));
+        JLabel labelBanderaIcon = new JLabel(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\Buscaminas\\src\\img\\bandera.jpg"));
         labelBanderas = new JLabel("0/10");
-        JLabel labelTiempoIcon = new JLabel(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\src\\Minas1\\img\\reloj1.jpg"));
+        JLabel labelTiempoIcon = new JLabel(new ImageIcon("C:\\Users\\drago\\IdeaProjects\\DAM2\\HLC\\Buscaminas\\src\\img\\reloj1.jpg"));
         labelReloj = new JLabel("00:00");
         buttonStart = new JButton("START");
         buttonPause = new JButton("PAUSE");
