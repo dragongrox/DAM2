@@ -8,8 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" filepath="$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/HLC.iml" filepath="$PROJECT_DIR$/HLC/HLC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AD/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/AD/Hibernate/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/AD/MetodoDOM.iml" filepath="$PROJECT_DIR$/AD/MetodoDOM.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/PSP.iml" filepath="$PROJECT_DIR$/PSP/PSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSP/Pong/Pong.iml" filepath="$PROJECT_DIR$/PSP/Pong/Pong.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/Practica1/Practica1.iml" filepath="$PROJECT_DIR$/HLC/Practica1/Practica1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/Practica2/Practica2.iml" filepath="$PROJECT_DIR$/HLC/Practica2/Practica2.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/Practica3/Practica3.iml" filepath="$PROJECT_DIR$/PSP/Practica3/Practica3.iml" />
