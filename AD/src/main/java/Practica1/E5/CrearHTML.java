@@ -35,7 +35,5 @@ public class CrearHTML {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
