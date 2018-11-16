@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/HLC/Buscaminas/Buscaminas.iml" filepath="$PROJECT_DIR$/HLC/Buscaminas/Buscaminas.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
       <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSP/EjercicioServidorClienteUDP/EjercicioServidorClienteUDP.iml" filepath="$PROJECT_DIR$/PSP/EjercicioServidorClienteUDP/EjercicioServidorClienteUDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" filepath="$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/HLC.iml" filepath="$PROJECT_DIR$/HLC/HLC.iml" />
       <module fileurl="file://$PROJECT_DIR$/AD/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/AD/Hibernate/Hibernate.iml" />
