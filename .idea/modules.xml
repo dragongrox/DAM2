@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/PSP/PracticaIIAmpliada/PracticaIIAmpliada.iml" filepath="$PROJECT_DIR$/PSP/PracticaIIAmpliada/PracticaIIAmpliada.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/PracticaITreads/PracticaITreads.iml" filepath="$PROJECT_DIR$/PSP/PracticaITreads/PracticaITreads.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/ServidorClienteUDP/ServidorClienteUDP.iml" filepath="$PROJECT_DIR$/PSP/ServidorClienteUDP/ServidorClienteUDP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DI/T01EclipseSergeyShevchenko/T01EclipseSergeyShevchenko.iml" filepath="$PROJECT_DIR$/DI/T01EclipseSergeyShevchenko/T01EclipseSergeyShevchenko.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/Ejemplo1/ejemplo1.iml" filepath="$PROJECT_DIR$/PSP/Ejemplo1/ejemplo1.iml" />
     </modules>
   </component>
