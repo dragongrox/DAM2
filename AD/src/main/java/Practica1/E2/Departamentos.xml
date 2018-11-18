@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Departamento>
+    <departamento>
+        <ID>1</ID>
+        <tipo>algo</tipo>
+        <nombre>departamento1</nombre>
+        <domicilio>Almeria</domicilio>
+        <ciudad>Almeria</ciudad>
+        <cp>04004</cp>
+        <provincia>Almeria</provincia>
+        <pais>España</pais>
+    </departamento>
+    <departamento>
+        <ID>2</ID>
+        <tipo>algo mas</tipo>
+        <nombre>departamento2</nombre>
+        <domicilio>Murcia</domicilio>
+        <ciudad>Murcia</ciudad>
+        <cp>89764</cp>
+        <provincia>Murcia</provincia>
+        <pais>España</pais>
+    </departamento>
+</Departamento>
