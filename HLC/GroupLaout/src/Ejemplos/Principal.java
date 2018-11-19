@@ -6,7 +6,7 @@ import static javax.swing.SwingUtilities.invokeLater;
 
 public class Principal {
     public static void mostrar() {
-        Ventana5 ventana = new Ventana5();
+        Ventana4 ventana = new Ventana4();
         ventana.setVisible(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setTitle("prueba");
