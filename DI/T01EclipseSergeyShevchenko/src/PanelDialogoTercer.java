@@ -9,7 +9,7 @@ public class PanelDialogoTercer extends JFrame {
             labelNumeroHabitaciones, labelNinos, labelExtrasNinos, labelImagenHotel, labelImporteHabitacion;
     JFormattedTextField textFieldFechaEntrada, textFieldFechaSalida;
     JTextField textFieldNumeroDiasEstancia;
-
+    JComboBox<String> comboBoxTipoHabitacion;
 
     public PanelDialogoTercer() {
         labelFechaEntrada = new JLabel("Fecha Entrada");
@@ -41,6 +41,11 @@ public class PanelDialogoTercer extends JFrame {
 
         textFieldNumeroDiasEstancia = new JTextField(DiferenciaDias());
 
+        comboBoxTipoHabitacion = new JComboBox<String>();
+        comboBoxTipoHabitacion.addItem("Simple");
+        comboBoxTipoHabitacion.addItem("Doble");
+        comboBoxTipoHabitacion.addItem("Suite");
+
         Container container = this.getContentPane();
         GroupLayout groupLayout = new GroupLayout(container);
         container.setLayout(groupLayout);
@@ -52,25 +57,22 @@ public class PanelDialogoTercer extends JFrame {
                 groupLayout.createSequentialGroup()
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                 .addComponent(labelFechaEntrada)
-                                .addComponent(null))
+                                .addComponent(textFieldFechaEntrada))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                 .addComponent(labelFechaSalida)
-                                .addComponent(null))
+                                .addComponent(textFieldFechaSalida))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                 .addComponent(labelNumeroDiasEstancia)
-                                .addComponent(null))
+                                .addComponent(textFieldNumeroDiasEstancia))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                 .addComponent(labelTipoHabitacion)
-                                .addComponent(null))
+                                .addComponent(comboBoxTipoHabitacion))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                .addComponent(labelNumeroHabitaciones)
-                                .addComponent(null))
+                                .addComponent(labelNumeroHabitaciones))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                .addComponent(labelNinos)
-                                .addComponent(null))
+                                .addComponent(labelNinos))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                .addComponent(labelExtrasNinos)
-                                .addComponent(null))
+                                .addComponent(labelExtrasNinos))
 
         );
 
@@ -85,14 +87,13 @@ public class PanelDialogoTercer extends JFrame {
                                 .addComponent(labelNinos)
                                 .addComponent(labelExtrasNinos))
                         .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                .addComponent(null)
-                                .addComponent(null)
-                                .addComponent(null)
-                                .addComponent(null)
-                                .addComponent(null)
-                                .addComponent(null)
-                                .addComponent(null))
+                                .addComponent(textFieldFechaEntrada)
+                                .addComponent(textFieldFechaSalida)
+                                .addComponent(textFieldNumeroDiasEstancia)
+                                .addComponent(comboBoxTipoHabitacion))
         );
+
+        pack();
     }
 
     private int DiferenciaDias() {
