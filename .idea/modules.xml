@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/HLC/Buscaminas/Buscaminas.iml" filepath="$PROJECT_DIR$/HLC/Buscaminas/Buscaminas.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAM2.iml" filepath="$PROJECT_DIR$/DAM2.iml" />
       <module fileurl="file://$PROJECT_DIR$/DI/DI.iml" filepath="$PROJECT_DIR$/DI/DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DI/EXAMENeclipseSergeyShevchenko/EXAMENeclipseSergeyShevchenko.iml" filepath="$PROJECT_DIR$/DI/EXAMENeclipseSergeyShevchenko/EXAMENeclipseSergeyShevchenko.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/EjercicioServidorClienteUDP/EjercicioServidorClienteUDP.iml" filepath="$PROJECT_DIR$/PSP/EjercicioServidorClienteUDP/EjercicioServidorClienteUDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" filepath="$PROJECT_DIR$/HLC/GroupLaout/GroupLaout.iml" />
       <module fileurl="file://$PROJECT_DIR$/HLC/HLC.iml" filepath="$PROJECT_DIR$/HLC/HLC.iml" />
@@ -21,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/PSP/PracticaITreads/PracticaITreads.iml" filepath="$PROJECT_DIR$/PSP/PracticaITreads/PracticaITreads.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/ServidorClienteUDP/ServidorClienteUDP.iml" filepath="$PROJECT_DIR$/PSP/ServidorClienteUDP/ServidorClienteUDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/DI/T01EclipseSergeyShevchenko/T01EclipseSergeyShevchenko.iml" filepath="$PROJECT_DIR$/DI/T01EclipseSergeyShevchenko/T01EclipseSergeyShevchenko.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSP/TCPIP/TCPIP.iml" filepath="$PROJECT_DIR$/PSP/TCPIP/TCPIP.iml" />
       <module fileurl="file://$PROJECT_DIR$/PSP/Ejemplo1/ejemplo1.iml" filepath="$PROJECT_DIR$/PSP/Ejemplo1/ejemplo1.iml" />
     </modules>
   </component>
